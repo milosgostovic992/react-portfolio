@@ -1,0 +1,28 @@
+@import '../../Helper/variarble.scss';
+
+// .contact__item-holder {
+//     display: flex;
+//     align-items: center;
+// }
+
+.contact__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: $secondary;
+    margin-bottom: 30px;
+    color: white;
+    width: 30%;
+    border-radius:16px;
+    overflow: hidden;
+}
+
+.contact__item-text {
+    font-size: 30px;
+}
+
+.contact__item-icon {
+  font-size: 40px;
+  margin-right: 15px;
+}
