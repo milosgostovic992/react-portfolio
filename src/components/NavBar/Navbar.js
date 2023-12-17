@@ -1,7 +1,7 @@
 import logo from '../../logo.svg'
 import {useState, useEffect, useRef} from 'react'
 import { FaBars} from 'react-icons/fa'
-import {links, social} from '../../data/navbardata'
+import {links} from '../../data/navbardata'
 import Wrapper from '../../Helper/Wrapper'
 import { Link } from 'react-router-dom';
 
@@ -44,13 +44,6 @@ const Navbar = () => {
                             })}
                         </ul>
                     </div>
-                    <ul className="social-icons">
-                        {social.map((soc) => {
-                            return <li key={soc.id}>
-                                <a target='_blank' href={soc.url}>{soc.icon}</a>
-                            </li>
-                        })}
-                    </ul>
                 </div>
             </Wrapper>
         </nav>
