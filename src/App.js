@@ -4,11 +4,12 @@ import Navbar from './components/NavBar/Navbar.js';
 import Accordion from './components/Accordion/Accordion.js';
 import About from './components/About/About.js';
 import Contact from './components/Contact/Contact.js';
+import Services from './components/Services/Services.js';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import bgImg from './bg.jpg';
 
-import Wrapper from './Helper/Wrapper.js';
 import Hero from './components/Hero/Hero.js';
+import Projects from './components/Projects/Projects.js';
+import Footer from './components/Footer/Footer.js';
 
 function App() {
 
@@ -19,10 +20,12 @@ function App() {
     <div className="main__content">
       <Switch>
         <Route exact path='/'>
-        <Hero />
+          <Hero />
+          <Services />
           <Tabs />
-          <Accordion />
-          <Slider />
+          <Projects/>
+          {/* <Accordion />
+          <Slider /> */}
         </Route>
         <Route path="/about">
           <About />
@@ -32,6 +35,7 @@ function App() {
         </Route>
       </Switch>
     </div>
+    <Footer/>
   </Router>
 }
 
