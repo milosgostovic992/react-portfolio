@@ -9,8 +9,8 @@ const Footer = () => {
         <footer className="footer">
             <Wrapper>
                 <div className="footer__holder">
-                    <div className="nav-img-holder">
-                        <Link to='/'><img className='footer__logo' src={logo} alt="logo" /></Link>
+                    <div className="footer__logo-holder">
+                        <Link className="footer__logo-link" to='/'><img className='footer__logo' src={logo} alt="logo" /></Link>
                     </div>
                     <ul className="footer__social-list">
                         {social.map((s) => (

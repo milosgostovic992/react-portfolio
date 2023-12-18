@@ -8,11 +8,16 @@
     position: relative;
 }
 
-.footer__logo {
-    position: absolute;
-    left: 0;
-    top: 0;
+.footer__logo-holder {
+    margin: 0 auto;
+    display: block;
     width: 100px;
+}
+
+.footer__logo-link {
+    width: 100%;
+    display: block;
+
 }
 
 .footer__social-list {

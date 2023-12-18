@@ -978,6 +978,22 @@ Slider
 }
 
 @media (max-width: 991px) {
+  .hero::before{
+      display: none;
+  }
+  .hero__container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero__article {
+    flex: 100%;
+    max-width: 100%;
+    justify-content: center;
+  }
+  .hero__image-holder {
+    flex: 1;
+    max-width: 100%;
+  }
   .links a {
     font-size: 18px;
     line-height: 22px;
