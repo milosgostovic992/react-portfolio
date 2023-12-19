@@ -3,6 +3,8 @@ import './projects.scss'
 import { projects } from '../../data/projectdata'
 
 const Projects = () => {
+    const tags = projects[0].tags;
+    console.log(tags);
     return ( 
         <div className='projects'>
             <Wrapper>
@@ -13,7 +15,7 @@ const Projects = () => {
                     </div>
                     {projects.map((project) => (
                     <li key={project.id} className='projects__item'>       
-                        <div className="projects-holder">
+                        <div className="projects__holder">
                             <div className="projects__image-holder has-cover">
                                 <img src={project.image} alt="" className="project__img" />
                             </div>
@@ -23,6 +25,11 @@ const Projects = () => {
                                 </span>
                                 <h3 className="project__info-heading">{project.title}</h3>
                                 <p className='project__info-text'>{project.text}</p>
+                                <div className="projects__tags">
+                                    {project.tags.map((tag, index) => (
+                                        <span className='projects__tag' key={index}>{tag}</span>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </li>

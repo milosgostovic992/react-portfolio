@@ -9,8 +9,6 @@
     background-color: #f1f5f8;
 }
 
-
-
 .services__item {
     background: var(--clr-white);
     padding: 48px 24px;
@@ -66,11 +64,28 @@
         grid-template-columns: 1fr 1fr;
         column-gap: 2rem;
     }
-  }
-
-  @media (max-width: 767px) {
-    .services__list {
-        grid-template-columns:  1fr;
-        column-gap: 2rem;
+    .services__item:hover {
+        &:hover {
+            background-color: inherit;
+            .services__underline {
+                background-color: inherit;
+            }
+            .services__title {
+               color: inherit;
+            }
+            .services__icon {
+                color: inherit;
+            }
+            .services__text {
+                color: inherit
+            }
+        }
     }
   }
+
+@media (max-width: 767px) {
+.services__list {
+    grid-template-columns:  1fr;
+    column-gap: 2rem;
+}
+}

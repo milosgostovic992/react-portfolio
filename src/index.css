@@ -464,7 +464,7 @@ backdrop-filter: blur(18px);
 }
 
 .links a::before {
-  content: '';
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -473,6 +473,10 @@ backdrop-filter: blur(18px);
     background-color: #2caeba;
     transition: var(--transition);
     transition-property: width;
+}
+
+.links li {
+  margin-bottom: 15px;
 }
 
 .links a:hover::before {
@@ -983,11 +987,13 @@ Slider
   }
   .hero__container {
     flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
   }
   .hero__article {
-    flex: 100%;
+    flex: 1 1 100%;
     max-width: 100%;
+    width: 100%;
     justify-content: center;
   }
   .hero__image-holder {
@@ -997,6 +1003,13 @@ Slider
   .links a {
     font-size: 18px;
     line-height: 22px;
+  }
+  .links a::before {
+    display: none;
+  }
+  .links a:hover {
+    background: inherit;
+    color: inherit;
   }
 }
 

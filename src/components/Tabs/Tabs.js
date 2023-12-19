@@ -3,8 +3,6 @@ import axios from 'axios';
 import { FaAngleDoubleRight } from 'react-icons/fa';
 import jobData from "../../data/tabsdata"
 
-const url = 'https://course-api.com/react-tabs-project'
-
 function Tabs() {
 
     const [value, setValue] = useState(0);
