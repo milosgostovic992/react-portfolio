@@ -22,7 +22,7 @@ function App() {
         <Route exact path='/'>
           <Hero />
           <Services />
-          <Tabs />
+          {/* <Tabs /> */}
           <Projects/>
           {/* <Accordion />
           <Slider /> */}
