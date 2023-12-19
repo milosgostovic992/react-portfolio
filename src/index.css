@@ -998,7 +998,8 @@ Slider
   }
   .hero__image-holder {
     flex: 1;
-    max-width: 100%;
+    max-width: 60%;
+    margin: auto;
   }
   .links a {
     font-size: 18px;
