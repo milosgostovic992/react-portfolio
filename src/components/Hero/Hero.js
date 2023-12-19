@@ -11,7 +11,7 @@ const Hero = () => {
            <article className="hero__article">
                 <div className="underline"></div>
                 <h1 className="hero__heading">I'm Milos</h1>
-                <h4 className="hero__info">Freelance Web And Mobile UI/UX Designer</h4>
+                <h4 className="hero__info">Web UI Developer</h4>
                 <Link to="/contact" className="hero__link btn">Contact me</Link>
                 <ul className="social-icons">
                         {social.map((soc) => {
